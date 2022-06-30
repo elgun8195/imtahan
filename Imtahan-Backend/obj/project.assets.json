@@ -5880,11 +5880,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Administrator\\source\\repos\\Imtahan-Backend\\Imtahan-Backend\\Imtahan-Backend.csproj",
+      "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\Imtahan-Backend\\Imtahan-Backend\\Imtahan-Backend.csproj",
       "projectName": "Imtahan-Backend",
-      "projectPath": "C:\\Users\\Administrator\\source\\repos\\Imtahan-Backend\\Imtahan-Backend\\Imtahan-Backend.csproj",
+      "projectPath": "C:\\Users\\Administrator\\Desktop\\Imtahan-Backend\\Imtahan-Backend\\Imtahan-Backend.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Administrator\\source\\repos\\Imtahan-Backend\\Imtahan-Backend\\obj\\",
+      "outputPath": "C:\\Users\\Administrator\\Desktop\\Imtahan-Backend\\Imtahan-Backend\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
