@@ -1,0 +1,103 @@
+footer {
+  background-color: #2a3336;;
+  li {
+    list-style: none;
+    i {
+      color: skyblue;
+    }
+  }
+  .f-left {
+    margin-left: 25%;
+    h4 {
+      color: white;
+    }
+    span {
+      color: white;
+    }
+    p {
+      color: white;
+    }
+
+    .f-icons{
+        a{
+            width: 25px;
+            background-color: black;
+        border-radius: 2px;
+        margin-left: 10px;
+            i{
+                margin-left: 3px;
+                color: white;
+            }
+        }
+        a:hover{
+            background-color: skyblue;
+            transition: 0.6s;
+        }
+    }
+  }
+
+
+  .f-left-center{
+    h4 {
+        color: white;
+      }
+      li{
+        cursor: pointer;  
+        color: white;
+      }
+      li:hover{
+        color: skyblue;
+            transition: 0.6s;  
+      }
+  }
+
+  .f-right-center{
+    h4 {
+        color: white;
+      }
+      li{
+        cursor: pointer;  
+        color: white;
+      }
+      li:hover{
+        color: skyblue;
+            transition: 0.6s;  
+      }
+  }
+
+.f-end{
+    h4{
+        color: white;
+    }
+    p{
+        color: white;
+    }
+
+    input{
+        width: 300px;
+        height: 40px;
+        border: 2px;
+        border-radius: 2px;
+    }
+    button{
+        width: 90px;
+        height: 41px;
+        background-color: skyblue;
+        border-radius: 2px;
+        border: 2px;
+    }
+    
+}
+
+    .f-last{
+        margin-left: 43%;
+        a{
+            list-style: none;
+        }
+        p{
+            text-align: center;
+            color: white;
+        }
+    }
+
+}
