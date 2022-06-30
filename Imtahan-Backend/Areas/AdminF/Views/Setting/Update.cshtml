@@ -1,0 +1,42 @@
+﻿@model Setting
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Areas/AdminF/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<div class="container">
+    <div class="row">
+        <form method="post" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly"></div>
+             <div class="form-group">
+                <label asp-for="Skype">Skype</label>
+                <input asp-for="Skype" class="form-control"   aria-describedby="emailHelp" placeholder="Enter Skype"> 
+            </div>
+            <div class="form-group">
+                <label asp-for="Twitter">Twitter</label>
+                <input asp-for="Twitter" class="form-control"   aria-describedby="emailHelp" placeholder="Enter Twitter"> 
+            </div>
+
+             <div class="form-group">
+                <label asp-for="Instargarm">Instargarm</label>
+                <input asp-for="Instargarm" class="form-control"   aria-describedby="emailHelp" placeholder="Enter Instargarm"> 
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Facebook">Facebook</label>
+                <input asp-for="Facebook" class="form-control"   aria-describedby="emailHelp" placeholder="Enter Facebook"> 
+            </div>
+
+            
+            <div class="form-group">
+                <label asp-for="Linkedin">Linkedin</label>
+                <input asp-for="Linkedin" class="form-control"   aria-describedby="emailHelp" placeholder="Linkedin"> 
+            </div>
+
+             
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</div>
+

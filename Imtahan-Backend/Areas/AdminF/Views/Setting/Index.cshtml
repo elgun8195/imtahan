@@ -1,0 +1,32 @@
+﻿@model Setting
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/AdminF/Views/Shared/_AdminLayout.cshtml";
+}
+<div class="container">
+    <div class="row">
+        <a class="btn btn-success" asp-controller="setting" asp-action="create">create</a>
+        <table class="table">
+            <thead>
+                <tr>  
+                    <th scope="col">Skype</th>
+                    <th scope="col">Insta</th>
+                    <th scope="col">facebook</th>
+                    <th scope="col">Twitter</th>
+                    <th scope="col">Linkedin</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                    <tr>  
+                        <td>@Model.Skype</td>
+                        <td>@Model.Instargarm</td>                        
+                        <td>@Model.Facebook</td>
+                        <td>@Model.Twitter</td>
+                        <td>@Model.Linkedin</td>
+                    </tr>
+                
+            </tbody>
+        </table>
+    </div>
+</div>

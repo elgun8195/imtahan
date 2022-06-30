@@ -9,5 +9,6 @@ namespace Imtahan_Backend.ViewModels
     public class HomeVM
     {
         public IEnumerable<Team> Team { get; set; }
+        public Setting Setting { get; set; }
     }
 }

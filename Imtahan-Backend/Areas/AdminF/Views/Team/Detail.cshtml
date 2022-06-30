@@ -1,0 +1,37 @@
+﻿@model Team
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/AdminF/Views/Shared/_AdminLayout.cshtml";
+}
+<div class="container">
+    <div class="row">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Image</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Position</th>
+                    <th scope="col">Desc</th>
+                    <th scope="col">Insta</th>
+                    <th scope="col">facebook</th>
+                    <th scope="col">Twitter</th>
+                    <th scope="col">Linkedin</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td><img src="~/images/@Model.Image" /></td>
+                        <td>@Model.Name</td>
+                        <td>@Model.Position</td>
+                        <td>@Model.Desc</td>
+                        <td>@Model.Instargarm</td>
+                        <td>@Model.Facebook</td>
+                        <td>@Model.Twitter</td>
+                        <td>@Model.Linkedin</td>
+                    </tr>
+                
+            </tbody>
+        </table>
+    </div>
+</div>

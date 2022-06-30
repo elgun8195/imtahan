@@ -1,0 +1,47 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+#services {
+    background-color: rgb(242, 253, 255);
+  a {
+    text-decoration: none;
+  }
+  .service-head {
+    h2 {
+      text-align: center;
+      font-weight: 700;
+    }
+    p {
+      color: gray;
+      text-align: center;
+    }
+  }
+
+  .service-item {
+      background-color: white;
+      width: 100%;
+      height: 130px;
+      margin-bottom: 5%;
+    .service-icon {
+      i {
+        color: skyblue;
+        font-size: 37px;
+      }
+    }
+.item{
+margin-left: 5%;
+    a {
+      h3 {
+        color: black;
+      }
+    }
+    h3:hover{
+        color: skyblue;
+        transition: 0.6s;
+    }
+}
+  }
+}

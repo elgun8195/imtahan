@@ -28,32 +28,33 @@ namespace Imtahan_Backend
         {
             string connectionString = _config.GetConnectionString("DefaultConnection");
             services.AddControllersWithViews();
-            services.AddDbContext<AppDbContext>(op=> 
+            services.AddDbContext<AppDbContext>(op =>
             {
                 op.UseSqlServer(connectionString);
             });
 
-            //services.AddSession(op=> {
-            //    op.IdleTimeout = TimeSpan.FromMinutes(20);
-            //});
+            services.AddSession(op =>
+            {
+                op.IdleTimeout = TimeSpan.FromMinutes(20);
+            });
 
-            //services.AddIdentity<AppUser, IdentityRole>(op=> 
-            //{
-            //    op.User.RequireUniqueEmail = true;
+            services.AddIdentity<AppUser, IdentityRole>(op =>
+            {
+                op.User.RequireUniqueEmail = true;
 
-            //    op.Password.RequireDigit = true;
-            //    op.Password.RequiredLength = 6;
-            //    op.Password.RequireLowercase = true;
-            //    op.Password.RequireNonAlphanumeric = true;
-            //    op.Password.RequireUppercase = true;
+                op.Password.RequireDigit = true;
+                op.Password.RequiredLength = 6;
+                op.Password.RequireLowercase = true;
+                op.Password.RequireNonAlphanumeric = true;
+                op.Password.RequireUppercase = true;
 
-            //    op.Lockout.AllowedForNewUsers = true;
-            //    op.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(20);
-            //    op.Lockout.MaxFailedAccessAttempts = 3;
-            //}).AddEntityFrameworkStores<AppDbContext>().AddDefaultTokenProviders();
+                op.Lockout.AllowedForNewUsers = true;
+                op.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(20);
+                op.Lockout.MaxFailedAccessAttempts = 3;
+            }).AddEntityFrameworkStores<AppDbContext>().AddDefaultTokenProviders();
         }
 
-       
+
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
@@ -63,11 +64,13 @@ namespace Imtahan_Backend
 
             app.UseRouting();
             app.UseStaticFiles();
-            //app.UseSession();
-            //app.UseAuthentication();
-            //app.UseAuthorization();
+            app.UseSession();
+            app.UseAuthentication();
+            app.UseAuthorization();
             app.UseEndpoints(endpoints =>
             {
+                endpoints.MapControllerRoute("areas",
+             "{area:exists}/{controller=dashboard}/{action=Index}/{id?}");
                 endpoints.MapDefaultControllerRoute();
             });
         }

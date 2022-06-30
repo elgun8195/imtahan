@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Imtahan_Backend.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20220630104354_Test")]
-    partial class Test
+    [Migration("20220630110331_initialproject")]
+    partial class initialproject
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

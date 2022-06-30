@@ -1,0 +1,49 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+#slider {
+  #carouselExampleIndicators {
+
+    li{
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+    }
+
+
+
+    .carousel-inner {
+      .carousel-item {
+        img {
+          height: 600px;
+        }
+
+
+
+
+
+.carousel-caption{
+  margin-bottom: 7%;
+
+  h1{
+    font-size: 4rem;
+  }
+
+  a{
+    margin-top: 2%;
+    width: 150px;
+    height: 40px;
+    background-color: skyblue;
+    border-color: skyblue;
+  }
+}
+
+
+
+
+      }
+    }
+  }
+}

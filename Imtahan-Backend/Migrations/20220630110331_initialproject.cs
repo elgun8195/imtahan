@@ -2,7 +2,7 @@
 
 namespace Imtahan_Backend.Migrations
 {
-    public partial class Test : Migration
+    public partial class initialproject : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

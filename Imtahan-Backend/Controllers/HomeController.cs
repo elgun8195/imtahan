@@ -21,7 +21,9 @@ namespace Imtahan_Backend.Controllers
         {
             HomeVM homeVM = new HomeVM()
             {
-                Team = _context.Teams.ToList()
+                Team = _context.Teams.ToList(),
+                Setting=_context.Settings.FirstOrDefault()
+                
             };
             return View(homeVM);
         }
